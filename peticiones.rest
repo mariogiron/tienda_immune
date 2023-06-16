@@ -1,0 +1,57 @@
+GET http://localhost:3000/api/pruebas/creacion_v2
+
+###
+GET http://localhost:3000/api/pruebas/recuperacion
+
+###
+GET http://localhost:3000/api/pruebas/actualizar_v3
+
+###
+GET http://localhost:3000/api/pruebas/borrar
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "email": "lorena@gmail.com",
+    "password": "12344"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "mariano@gmail.com",
+    "password": "12344"
+}
+
+###
+PUT http://localhost:3000/api/users/product/648b5f238bbd51a7bf46564a
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQ4YjUzMmNjYWVhNGNmMGNhZGVjMWE4IiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6Im1hcmlhbml0byIsImlhdCI6MTY4NjkzNDQ0Mn0.lZ3DcUYcB0T5zgIOg5WlGU7tKTX6QhinpWYHo693K10
+
+###
+GET http://localhost:3000/api/users/648b532ccaea4cf0cadec1a8
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Cuchillo de untar",
+    "description": "para untar mantequilla",
+    "price": 12,
+    "department": "cocina",
+    "stock": 100,
+    "available": true,
+    "owner": "648b532ccaea4cf0cadec1a8"
+}
+
+###
+GET http://localhost:3000/api/products
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQ4YjUzMmNjYWVhNGNmMGNhZGVjMWE4IiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6Im1hcmlhbml0byIsImlhdCI6MTY4NjkzNDQ0Mn0.lZ3DcUYcB0T5zgIOg5WlGU7tKTX6QhinpWYHo693K10
+
+### 
+DELETE http://localhost:3000/api/products/999182814123
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjQ4YjUzMmNjYWVhNGNmMGNhZGVjMWE4IiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6Im1hcmlhbml0byIsImlhdCI6MTY4NjkzNDQ0Mn0.lZ3DcUYcB0T5zgIOg5WlGU7tKTX6QhinpWYHo693K10
